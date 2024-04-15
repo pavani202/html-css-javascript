@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Food Preferences Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+     <style>
+        body{
+            font-family: sans-serif;
+        }
+        label{
+            margin-right:20px
+        }
+        table {
+            border:1px solid black;
+        }   
+        th,td{
+            padding: 10px;
+        }
+        button{
+            margin: 2px;
+        }
+        .container {
+            border-radius: 5px;
+            padding: 20px;
+        }
+        #user,#age,.eat,.often-eat,.be-vegan,.submit-reset,.origin-food,.often-eat-table,.food-origin {
+          margin-bottom: 20px;
+        }
+    </style>
+  </head>
+  <body>
+  <h1>Food Preferences - Survey Form </h1>
+  <h5>Please fill out and submit the survey form at the earliest </h5>
+  <hr>
+  <div class="container">
+  <form method="post">
+   <div>
+         <label for="name">1. Name</label>
+         <input type="name" id="user">
+    </div>
+    <div>
+        <label for="age">2. Age</label>
+        <input type="number" id="age">
+   </div>
+   <div class="eat">
+        <label for="eat">3. Where do you eat most often?</label>
+        <input type="radio" id="home" name="location" value="HOME">
+        <label for="home">at home</label>
+        <input type="radio" id="school" name="location" value="SCHOOL">
+        <label for="school">at work/school</label>
+        <input type="radio" id="rest" name="location" value="REST">
+        <label for="restaurent">in a restaurant</label>
+    </div>
+<div class="often-eat">
+    <label for="spicify">4. Specify how often</label>
+    <div class="often-eat-table">
+        <table>
+            <tr>
+                <th></th>
+                <th>every day</th>
+                <th>a few times a week</th>
+                <th>once a week</th>
+                <th>several times a month</th>
+                <th>once a month</th>
+                <th>less often than once a month</th>
+            </tr>
+            <tr>
+                <td>You prepare your own meals</td>
+                <td> 
+                    <div class="radio">
+                    <label><input type="radio" id='ownmeals' name="you_prepare"></label>
+                    </div>
+                </td>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" id='ownmeals1' name="you_prepare"></label>
+                </div>
+                </td>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" id='ownmeals2' name="you_prepare"></label>
+                </div>
+                </td>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" id='ownmeals3' name="you_prepare"></label>
+                </div>
+                </td>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" id='ownmeals4' name="you_prepare"></label>
+                </div>
+                </td>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" id='ownmeals5' name="you_prepare"></label>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td>You eat out</td>
+                <td> 
+                    <div class="radio">
+                    <label><input type="radio" id='eatout' name="you_eat_out"></label>
+                    </div>
+                </td>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" id='eatout1' name="you_eat_out"></label>
+                </div>
+                </td>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" id='eatout2' name="you_eat_out"></label>
+                </div>
+                </td>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" id='eatout3' name="you_eat_out"></label>
+                </div>
+                </td>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" id='eatout4' name="you_eat_out"></label>
+                </div>
+                </td>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" id='eatout5' name="you_eat_out"></label>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td>You order food for home</td>
+                <td> 
+                    <div class="radio">
+                    <label><input type="radio" id='home' name="you_order_food"></label>
+                    </div>
+                </td>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" id='home1' name="you_order_food"></label>
+                </div>
+                </td>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" id='home2' name="you_order_food"></label>
+                </div>
+                </td>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" id='home3' name="you_order_food"></label>
+                </div>
+                </td>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" id='home4' name="you_order_food"></label>
+                </div>
+                </td>
+                <td>
+                    <div class="radio">
+                        <label><input type="radio" id='home5' name="you_order_food"></label>
+                </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="origin-food">
+    <label for="spicify">5. The most common places you visit are restaurants serving food origin:</label>
+    <div class="food-origin">
+        <input type="checkbox" id="polish" name="food_origin_preference" value="Polish">
+        <label for="polish">Polish</label>
+        <input type="checkbox" id="indian" name="food_origin_preference" value="Indian">
+        <label for="indian">Indian</label><br>
+        <input type="checkbox" id="italian" name="food_origin_preference" value="Italian">
+        <label for="italian">Italian</label>
+        <input type="checkbox" id="spanish" name="food_origin_preference" value="Spanish">
+        <label for="spanish">Spanish</label><br>
+        <input type="checkbox" id="asian" name="food_origin_preference" value="Asian">
+        <label for="asian">Asian</label>
+        <input type="checkbox" id="chinese" name="food_origin_preference" value="Chinese">
+        <label for="chinese">Chinese</label><br>
+        <input type="checkbox" id="american" name="food_origin_preference" value="American">
+        <label for="american">American</label>
+        <input type="checkbox" id="other" name="food_origin_preference" value="Other">
+        <label for="other">Other</label><br>
+    </div>
+</div>  
+<div class = "be-vegan">
+    <label for="option">6. Give an option, would you go vegan</label>
+    <input type="radio" id="sure" name="vegan" value="Sure">
+    <label for="sure">Sure</label>
+    <input type="radio" id="no" name="vegan" value="No">
+    <label for="no">No</label>
+</div> 
+<div class="submit-reset">
+    <button type="button">Submit</button>
+    <button type="button">Reset</button>
+</div>
+</form>
+</div>
+  </body>
+</html>
